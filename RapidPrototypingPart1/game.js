@@ -15,7 +15,7 @@ class Scene1 extends Phaser.Scene
     {
         this.cameras.main.setBackgroundColor('#737373');
         this.add.text(90, 200, "Roly Poly: To the End", {color: '#FFFFFF'}).setFontSize(25);
-        this.input.on('pointerdown', () => this.scene.start('sceneB'));
+        this.input.on('pointerdown', () => this.scene.start('scene2'));
         
     }
 
@@ -30,7 +30,7 @@ class Scene2 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'scene11' });
+        super({ key: 'scene2' });
     }  
 
     create ()
